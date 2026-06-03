@@ -1,44 +1,76 @@
-# quiz-app
+# Quiz Vue.js
 
-This template should help get you started developing with Vue 3 in Vite.
+Interaktywna aplikacja quizowa napisana w **Vue 3** (Composition API, `<script setup>`),
+sprawdzająca wiedzę użytkownika na temat frameworka Vue. Quiz składa się z 7 pytań
+jednokrotnego wyboru, a po jego zakończeniu wyświetla wynik wraz z oceną.
 
-## Recommended IDE Setup
+Projekt powstał w ramach przedmiotu **Programowanie 2** (Zadanie 3 — testy jednostkowe i raport z testów).
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 🌐 Demo online
 
-## Recommended Browser Setup
+👉 [https://kasiajack.github.io/quiz-app/](https://kasiajack.github.io/quiz-app/)
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+## 🧩 Funkcje
 
-## Customize configuration
+- ekran startowy, ekran pytania oraz ekran wyniku,
+- pasek postępu i licznik pytań,
+- natychmiastowe oznaczanie poprawnej / błędnej odpowiedzi,
+- możliwość wcześniejszego zakończenia quizu (z potwierdzeniem),
+- ocena słowna i animacja konfetti przy dobrym wyniku.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## 🛠️ Technologie
 
-## Project Setup
+- **Vue 3** + **Vite**
+- **Vitest** + **Vue Test Utils** — testy jednostkowe
+- **Playwright** — test E2E
+- **@vitest/coverage-v8** — pokrycie kodu
+
+## 🚀 Uruchomienie
+
+Instalacja zależności:
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+Uruchomienie wersji deweloperskiej (z przeładowaniem na żywo):
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+Budowanie wersji produkcyjnej:
 
 ```sh
 npm run build
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+## ✅ Testy
+
+Uruchomienie wszystkich testów jednostkowych:
 
 ```sh
-npm run lint
+npm run test:run
 ```
+
+Testy wraz z raportem pokrycia kodu (raport HTML w `coverage/index.html`):
+
+```sh
+npm run coverage
+```
+
+Test E2E w Playwright (uruchamia serwer i sprawdza główny przepływ aplikacji):
+
+```sh
+npm run test:e2e
+```
+
+### Wyniki
+
+- **28 testów jednostkowych** + **1 test E2E** — wszystkie przechodzą,
+- **pokrycie linii: 95,41%** (wymóg ≥ 70%).
+
+## 📄 Raport z testów
+
+Pełny raport z testów (10 sekcji) znajduje się w pliku:
+[`docs/raport-testow.pdf`](docs/raport-testow.pdf)
