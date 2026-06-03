@@ -6,11 +6,11 @@ jednokrotnego wyboru, a po jego zakończeniu wyświetla wynik wraz z oceną.
 
 Projekt powstał w ramach przedmiotu **Programowanie 2** (Zadanie 3 — testy jednostkowe i raport z testów).
 
-## 🌐 Demo online
+## Demo online
 
 👉 [https://kasiajack.github.io/quiz-app/](https://kasiajack.github.io/quiz-app/)
 
-## 🧩 Funkcje
+## Funkcje
 
 - ekran startowy, ekran pytania oraz ekran wyniku,
 - pasek postępu i licznik pytań,
@@ -18,14 +18,14 @@ Projekt powstał w ramach przedmiotu **Programowanie 2** (Zadanie 3 — testy je
 - możliwość wcześniejszego zakończenia quizu (z potwierdzeniem),
 - ocena słowna i animacja konfetti przy dobrym wyniku.
 
-## 🛠️ Technologie
+## Technologie
 
 - **Vue 3** + **Vite**
 - **Vitest** + **Vue Test Utils** — testy jednostkowe
 - **Playwright** — test E2E
 - **@vitest/coverage-v8** — pokrycie kodu
 
-## 🚀 Uruchomienie
+## Uruchomienie
 
 Instalacja zależności:
 
@@ -45,7 +45,7 @@ Budowanie wersji produkcyjnej:
 npm run build
 ```
 
-## ✅ Testy
+## Testy
 
 Uruchomienie wszystkich testów jednostkowych:
 
@@ -70,7 +70,7 @@ npm run test:e2e
 - **28 testów jednostkowych** + **1 test E2E** — wszystkie przechodzą,
 - **pokrycie linii: 95,41%** (wymóg ≥ 70%).
 
-## 📄 Raport z testów
+## Raport z testów
 
 Pełny raport z testów (10 sekcji) znajduje się w pliku:
 [`docs/raport-testow.pdf`](docs/raport-testow.pdf)
